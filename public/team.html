@@ -12,6 +12,10 @@
         .card {
           margin-right: 0px;
         }
+        .columns {
+          padding-left: 5px;
+          padding-right: 5px;
+        }
       }
     </style>
   </head>
@@ -27,7 +31,7 @@
       <br />
       <div>
         <div class="columns">
-          <div class="card mr-3" data-aos="fade-right" data-aos-delay="1000">
+          <div class="column card mr-3" data-aos="fade-right" data-aos-delay="1000">
             <div class="card-image">
               <figure class="image is-4by3">
                 <img src="./img/mttPics/dexRob.jpg" alt="Rob">
@@ -47,7 +51,7 @@
             </div>
           </div>
           <br />
-          <div class="card mr-3" data-aos="fade-right" data-aos-delay="1250">
+          <div class="column card mr-3" data-aos="fade-right" data-aos-delay="1250">
             <div class="card-image">
               <figure class="image is-4by3">
                 <img src="./img/mttPics/ben.jpg" alt="Ben">
@@ -68,7 +72,7 @@
             </div>
           </div>
           <br />
-          <div class="card" data-aos="fade-right" data-aos-delay="1500">
+          <div class="column card" data-aos="fade-right" data-aos-delay="1500">
             <div class="card-image">
               <figure class="image is-4by3">
                 <img src="./img/mttPics/james.jpg" alt="james">
@@ -104,8 +108,8 @@
         </div>
         <br />
         <br />
-        <div class="columns">
-          <div class="card mr-3" data-aos="fade-right" data-aos-delay="1000">
+        <div class="columns" data-aos="fade-up" data-aos-delay="1000">
+          <div class="column card mr-3">
             <div class="card-image">
               <figure class="image is-4by3">
                 <img src="./img/mttPics/car.jpg" alt="Carolyn">
@@ -126,7 +130,7 @@
             </div>
           </div>
           <br />
-          <div class="card mr-3" data-aos="fade-right" data-aos-delay="1250">
+          <div class="column card mr-3">
             <div class="card-image">
               <figure class="image is-4by3">
                 <img src="./img/mttPics/tim.jpg" alt="Tim">
@@ -147,7 +151,7 @@
             </div>
           </div>
           <br />
-          <div class="card" data-aos="fade-right" data-aos-delay="1500">
+          <div class="column card">
             <div class="card-image">
               <figure class="image is-4by3">
                 <img src="./img/mttPics/rod.jpg" alt="Roddy Cash">
@@ -167,18 +171,39 @@
               </div>
             </div>
           </div>
+          <div class="column card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="./img/mttPics/cam.jpg" alt="Roddy Cash">
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="media">
+                <div class="media-content">
+                  <p class="title is-4">Cameron Day</p>
+                  <p class="subtitle is-6">Communications</p>
+                </div>
+              </div>
+              <div class="content">
+                I meant Ben Woods (Robert’s Brother) in September 2019 at the Prairie Peddler in Butler, Ohio. We struck up a conversation and he introduced me to his firestarter business.
+                Ben and I swapped information and we ended up negotiating a deal. I would make him a website and in return he would pay me $400 plus one of his firestarters.
+                In December 2020 I received a call from Ben. This is not too unusual as I always stay in contact with my clients.
+                Ben informed me that his brother was riding a bike race to support children in need and ask if I would join. I immediately said yes. I am a full
+                support of Robert’s cause and I am very excited for this journey. Let's do this Rob!
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
+    <script src="./js/index.js"></script>
     <script src="https://kit.fontawesome.com/db363a0ad8.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      alert("check ur text from caroyln and look into a index.js page for all the js for everypage add scroll to top to index")
       AOS.init({
         once: true,
         duration: 1250,
       })
-      scrollToTop = () => {window.scroll({top: 0, left: 0, behavior: "smooth"})}
     </script>
   </body>
 </html>
