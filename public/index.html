@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>The Way to Victory</title>
-        <meta name="description" content="">
+        <meta name="description" content="A vehicle to hope and healing! 
+        RAW 2021 | RAAM 2022">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./css/index.css">
         <style>
@@ -12,6 +13,22 @@
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+            }
+            #liveAlert {
+                background-color: rgb(86, 126, 211); 
+                top: 0; 
+                position: sticky; 
+                z-index: 1 !important;
+                margin-bottom: 0;
+            }
+            #live {
+                background-color: red;
+                border: 1px solid red;
+                border-radius: 50%;
+                padding-right: 1.5rem;
+                size: 2px;
+                margin-right: 0.5rem;
+                animation: blink 1.5s linear infinite;
             }
             #aboutusContainer {
                 background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/backgroundMain.jpg");
@@ -44,6 +61,11 @@
                     width: 60%;
                 }
             }
+            @keyframes blink {
+                50% {
+                    opacity: 0.4;
+                }
+            }
         </style>
     </head>
     <body>
@@ -61,6 +83,9 @@
                               <div id="navbarStick" class="navbar-menu">
                                 <div class="navbar-end">
                                   <div class="navbar-item">
+                                        <a class="navbar-item has-text-white has-text-white-medium" href="">
+                                            
+                                        </a>
                                         <a class="navbar-item has-text-white has-text-weight-medium" href="#aboutus">
                                             About Us
                                         </a>
@@ -92,7 +117,14 @@
         </header>
         <main>
             <button onclick="scrollToTop()" class="scrollToTop"><i class="fas fa-chevron-up"></i></button>
-            <div id="aboutusContainer" data-aos="fade-right">
+            <div class="notification has-text-white has-text-centered is-size-5" id="liveAlert">
+                <!--<span id="live"></span>-->
+                Live updates will be avialibe June 15th at 12 PST. Follow our <a href="#footer" class="link">social media</a> to stay tuned!
+                <button class="delete">
+
+                </button>
+            </div>
+            <div id="aboutusContainer" data-aos="fade-right" style="margin-top: 0;">
                 <section class="container p-2 has-text-white" id="aboutus">
                     <h1 class="has-text-centered is-size-2">About Us</h1>
                     <hr />
@@ -170,24 +202,31 @@
                             </a>
                         </figure>
                     </div>
-                    <div class="column p-4 has-text-centered" data-aos="fade-right" data-aos-delay="1250">
+                    <div class="column p-4 has-text-centered" data-aos="fade-right" data-aos-delay="1000">
                         <figure class="image is-1by1">
                             <a href="https://Deepwoodsfirestarters.com">
                                 <img src="./img/logos/deepwoods.jpg" alt="Deep Woods Logo Logo" loading="lazy" />
                             </a>
                         </figure>
                     </div>
-                    <div class="column p-4" data-aos="fade-right" data-aos-delay="1500">
+                    <div class="column p-4" data-aos="fade-right" data-aos-delay="1000">
                         <figure class="image is-1by1">
                             <a href="https://strummagrl.myportfolio.com">
                                 <img src="./img/logos/cLogo.png" alt="Strummagrl Logo" loading="lazy" />
                             </a>
                         </figure>
                     </div>
-                    <div class="column p-4" data-aos="fade-right" data-aos-delay="1750">
+                    <div class="column p-4" data-aos="fade-right" data-aos-delay="1000">
                         <figure class="image is-1by1">
                             <a href="https://biomac.biz">
                                 <img src="./img/logos/biomacLogo.png" alt="Biomac Logo" loading="lazy" />
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="column p-4" data-aos="fade-right" data-aos-delay="1000">
+                        <figure class="image is-1by1">
+                            <a href="https://orosportsusa.com">
+                                <img src="./img/logos/oro.png" alt="Biomac Logo" loading="lazy" />
                             </a>
                         </figure>
                     </div>
