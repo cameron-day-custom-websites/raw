@@ -29,6 +29,8 @@
                 size: 2px;
                 margin-right: 0.5rem;
                 animation: blink 1.5s linear infinite;
+                width: inherit;
+                height: inherit;
             }
             #aboutusContainer {
                 background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./img/backgroundMain.jpg");
@@ -117,13 +119,13 @@
         </header>
         <main>
             <button onclick="scrollToTop()" class="scrollToTop"><i class="fas fa-chevron-up"></i></button>
-            <div class="notification has-text-white has-text-centered is-size-5" id="liveAlert">
-                <!--<span id="live"></span>-->
-                Live updates will be avialibe June 15th at 12 PST. Follow our <a href="#footer" class="link">social media</a> to stay tuned!
+            <!--<div class="notification has-text-white has-text-centered is-size-5" id="liveAlert">
+                <span id="live"></span>
+                <a href="https://trackleaders.com/raam21i.php?name=Robert_Woods___The_Way_to_Victory" class="link">Live Updates</a>
                 <button class="delete">
 
                 </button>
-            </div>
+            </div>-->
             <div id="aboutusContainer" data-aos="fade-right" style="margin-top: 0;">
                 <section class="container p-2 has-text-white" id="aboutus">
                     <h1 class="has-text-centered is-size-2">About Us</h1>
@@ -168,27 +170,42 @@
                         <br />
                         <caption>The original crew after placing fourth in the NCOM race.</caption>
                     </figure>
+                    <br />
+                    <br />
+                    <figure class="has-text-centered" data-aos="fade-right">
+                        <img src="./img/conor.png" alt="Conor Picture" />
+                    </figure>
+                    <p>
+                        The Way to Victory Team dedicates our efforts in competing at the Race Across the West to Conor James Spencer. 
+                        Conor was sent by God to the doors of The Way to Victory. He just gotten out of jail and called looking for a ride. 
+                        After several attempts to find his friend’s house in the middle of the night, we decided to help Conor. 
+                        The condition is no drinking or drugging, and Conor agreed. Conor has not experienced a life free of drugs and alcohol but it is our hope, that he will. 
+                        Conor has a lot of legal issues and is battling addiction. We are here for him. 
+                        We dedicate this race to him to give him Hope when the tough days ahead wear him down. 
+                        Conor completed a 28 day rehab and is now in a half way house. 
+                        He will return to The Way to Victory when he finishes the half way house and continue to put the pieces back together. 
+                    </p>
                 </section>
             </div>
             <section class="container pt-5" id="sponsors">
                 <h2 class="is-size-3 has-text-centered ">Sponsors</h2>
                 <hr />
                 <div class="columns pt-4">
-                    <div class="column p-4" data-aos="fade-right">
+                    <div class="column p-4" data-aos="fade-right" data-aos-delay="1000">
                         <figure class="image is-1by1">
                             <a href="https://aerolitepedals.com">
                                 <img src="./img/logos/aerolitesLogo.jpeg" alt="Aerolites Logo" loading="lazy" />
                             </a>
                         </figure>
                     </div>
-                    <div class="column p-4" data-aos="fade-right" data-aos-delay="500">
+                    <div class="column p-4" data-aos="fade-right" data-aos-delay="1000">
                         <figure class="image is-1by1">
                             <a href="https://raceacrossamerica.org">
                                 <img src="./img/logos/rammLogo.jpg" alt="RAMM Logo" loading="lazy" />
                             </a>
                         </figure>
                     </div>
-                    <div class="column p-4" data-aos="fade-right" data-aos-delay="750">
+                    <div class="column p-4" data-aos="fade-right" data-aos-delay="1000">
                         <figure class="image is-1by1">
                             <a href="https://sullivanlearningcenter.com">
                                 <img src="./img/logos/slLogo.jpg" alt="SL Logo" loading="lazy" />
@@ -235,29 +252,29 @@
             <section class="container p-2 pt-6" id="contact">
                 <h3 class="is-size-4 pt-5">Contact Us</h3>
                 <br />
-                <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbzfEn3v8oaWkMPi5Y7ahjem5Ydti3MUT-2cv_YCtMWy52YN_Tu3YyKSUnSwE_ItSOOt3g/exec">
+                <form class="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxIlvUZk8y2IViV_NuP54NCi_5ZvgoN-uI1ar0vR6fEGDBv3c-edFPYsO8MUu_GO_FiIg/exec">
                     <fieldset class="field">
-                        <label class="label">Name</label>
+                        <label class="label" for="Name">Name</label>
                         <div class="control has-icons-left has-icons-right">
-                          <input class="input" type="text" placeholder="John Smith">
+                          <input class="input" name="Name" type="text" placeholder="John Smith">
                           <span class="icon is-small is-left">
                             <i class="fas fa-user"></i>
                           </span>
                         </div>
                     </fieldset>
                     <fieldset class="field">
-                        <label class="label">Email</label>
+                        <label class="label" for="Email">Email</label>
                         <div class="control has-icons-left has-icons-right">
-                          <input class="input" type="email" placeholder="example@example.com">
+                          <input class="input" name="Email" type="email" placeholder="example@example.com">
                           <span class="icon is-small is-left">
                             <i class="fas fa-envelope"></i>
                           </span>
                         </div>
                     </fieldset>
                     <fieldset class="field">
-                        <label class="label">Message</label>
+                        <label class="label" name="Message" for="Message">Message</label>
                         <div class="control">
-                          <textarea class="textarea" placeholder="Textarea"></textarea>
+                          <textarea class="textarea" placeholder="Message"></textarea>
                         </div>
                     </fieldset>
                     <fieldset class="field">
@@ -290,7 +307,7 @@
         <footer id="footer" class="footer has-background-light ">
             <div class="content has-text-centered">
                 <p>
-                    © The Way to Victory Foundation 2021, All Rights Reserved
+                    © The Way to Victory Foundation 2021, All Rights Reserved | Designed by <a href="https://camerondaycustomwebsites.net">Cameron Day Custom Websites</a>
                 </p>
                 <div class="has-text-white is-size-3">
                     <i><a class="fab fa-youtube has-text-danger" href="https://www.youtube.com/channel/UCwiTz_XqAMyDSL9wlet3QiQ"></a></i>
