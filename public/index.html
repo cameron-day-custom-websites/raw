@@ -318,6 +318,8 @@
             </div>
         </footer>
         <script src="./js/index.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
         <script src="https://kit.fontawesome.com/db363a0ad8.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script data-cfasync="false" src="./js/form.js"></script>
@@ -326,6 +328,17 @@
                 once: true,
                 duration: 1250,
             })
+            var firebaseConfig = {
+            apiKey: "AIzaSyDF1ekutZvEYZhAdxp9yqFasPXudFuARks",
+            authDomain: "thewaytovictorycdcw.firebaseapp.com",
+            projectId: "thewaytovictorycdcw",
+            storageBucket: "thewaytovictorycdcw.appspot.com",
+            messagingSenderId: "993865271490",
+            appId: "1:993865271490:web:03a00e30404717c3b4535b",
+            measurementId: "G-EXLPKPMD6Q"
+          };
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
         </script>
     </body>
 </html>
